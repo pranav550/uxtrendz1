@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="col-md-10">
+        <table class="table">
+            <thead>
+                <th>SrNo</th>
+                <th>img</th>
+                <th>name</th>
+                <th>id</th>
+                <th>price</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let product of products; index as i">
+                    <td>{{i+1}}</td>
+                    <td><img src="{{product.img}}" width=70px; height=70px;></td>
+                    <td>{{product.name}}</td>
+                    <td>{{product.id}}</td>
+                    <td>{{product.price}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

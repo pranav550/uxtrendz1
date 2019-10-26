@@ -1,0 +1,9 @@
+<input type="text" #name (input)="onInputClick($event)">
+<button (click)="onAddCart(name)" value="Laptop">Laptop</button>
+
+<br>
+
+<button (click)="onAddInfo($event)" value="Mobile">Mobile</button>
+<button (click)="onAddInfo($event)" value="TV">TV</button>
+<br>
+<p>{{msg}}</p>

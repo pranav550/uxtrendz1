@@ -1,0 +1,32 @@
+<div class="box" [class.myclass]="isClass">
+    Class binding
+</div>
+
+<div class="box" [style.margin]="isStyle">
+    Class binding
+</div>
+
+<div class="box" [style.margin]="isActive?isStyle:'5px'">
+    Class binding
+</div>
+
+<div class="box" [ngClass]="'class1 class2 class3'">
+    Class binding
+</div>
+
+
+<div class="box" [ngClass]="mltclasses">
+    Class binding
+</div>
+
+<div class="box" [ngStyle]="{
+  'background':'red',
+  'border':'10px solid green'
+}">
+    Class binding
+</div>
+
+
+<div class="box" [ngStyle]="mltStyle">
+    Class binding
+</div>

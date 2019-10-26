@@ -1,0 +1,78 @@
+<div class="container">
+
+    <div class="page-area ">
+        <h2>Products</h2>
+
+    </div>
+    <hr mb-3>
+    <div class="alert alert-light" role="alert">
+        <h5 class="text-primary" *ngIf="isProduct">{{newProduct}} is Added <button class="btn btn-primary float-right">Checkout</button> </h5>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row">
+
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../../assets/laptop.jpg" width="200px" height="200px" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Laptop</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <button class="btn btn-primary" (click)="addProduct('Laptop')">Select Laptop</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../../assets/mobile.jpg" width="200px" height="200px" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Mobile</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <button class="btn btn-primary" (click)="addProduct('Mobile')">Select Mobile</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../../assets/washingmachine.jpg" width="200px" height="200px" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Washing Machine</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <button class="btn btn-primary" (click)="addProduct('Washing Machine')">Select Washing Machine</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../../assets/tv.jpg" width="200px" height="200px" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Television</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <button class="btn btn-primary" (click)="addProduct('Television')">Select Television</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-12">
+            <app-child [productSelected]="proSelected" [productName]="proName" (newProduct)="onAddProduct($event)"></app-child>
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+</div>
